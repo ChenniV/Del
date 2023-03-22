@@ -5,6 +5,16 @@
   <script>
     alert("Customer Deleted Successfully");</script>
   @endif
+
+@if(Session::has('success2'))
+  <script>
+    alert("Customer Added Successfully");</script>
+  @endif
+@if(Session::has('success3'))
+<script>
+    alert("Customer Edited Successfully");</script>
+  @endif
+  <br>
   
 <table class="table">
   <thead class="thead-dark">
@@ -28,8 +38,8 @@
       <td>{{$customer->firstName}}</td>
       <td>{{$customer->email}}</td>
       <td>{{$customer->address}}</td>
-      <td><a href="#">Edit</a></td>
-      <td><a href="delete/{{$customer->id}}">Delete</a></td>
+      <td><a href="edit/{{$customer->id}}" class="btn btn-primary">Edit</a></td>
+      <td><a href="delete/{{$customer->id}}" class="btn btn-danger">Delete</a></td>
     </tr>
   </tbody>
   @endforeach

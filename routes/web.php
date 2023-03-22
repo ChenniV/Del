@@ -21,4 +21,10 @@ Route::post('/store', [UserController::class, 'store']);
 Route::get('/login', [UserController::class, 'login']);
 Route::post('/login/process', [UserController::class, 'process']);
 Route::get('/logout', [UserController::class, 'logout']);
+
+
 Route::get('delete/{id}', [CustomerController::class, 'delete']);
+Route::post('/saveCustomer', [CustomerController::class, 'saveCustomer']);
+Route::get('/addCustomer', [CustomerController::class, 'addCustomer']);
+Route::get('edit/{id}', [CustomerController::class, 'edit']);
+Route::post('/updateCustomer', [CustomerController::class, 'updateCustomer']);
