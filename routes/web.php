@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CustomerController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\ProductController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,6 +16,7 @@ use App\Http\Controllers\UserController;
 */
 
 Route::get('/', [CustomerController::class, 'index']);
+Route::get('/product', [ProductController::class, 'indexProduct']);
 
 Route::get('/register', [UserController::class, 'register']);
 Route::post('/store', [UserController::class, 'store']);
@@ -28,3 +30,9 @@ Route::post('/saveCustomer', [CustomerController::class, 'saveCustomer']);
 Route::get('/addCustomer', [CustomerController::class, 'addCustomer']);
 Route::get('edit/{id}', [CustomerController::class, 'edit']);
 Route::post('/updateCustomer', [CustomerController::class, 'updateCustomer']);
+
+Route::get('deleteProduct/{id}', [ProductController::class, 'deleteProduct']);
+Route::post('/saveProduct', [ProductController::class, 'saveProduct']);
+Route::get('/addProduct', [ProductController::class, 'addProduct']);
+Route::get('editProduct/{id}', [ProductController::class, 'editProduct']);
+Route::post('/updateProduct', [ProductController::class, 'updateProduct']);

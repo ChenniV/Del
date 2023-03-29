@@ -25,13 +25,6 @@
       </div>
 
       <ul class="navbar-nav flex-row">
-        <li class="nav-item me-3 me-lg-0">
-          <a class="nav-link" href="#" role="button" data-mdb-toggle="sidenav" data-mdb-target="#sidenav-1"
-            class="btn shadow-0 p-0 me-3" aria-controls="#sidenav-1" aria-haspopup="true">
-            <i class="fas fa-bars me-1"></i>
-            <span>Categories</span>
-          </a>
-        </li>
         <!-- Badge -->
         <li class="nav-item me-3 me-lg-0">
           <a class="nav-link" href="#">
@@ -45,13 +38,6 @@
             data-mdb-toggle="dropdown" aria-expanded="false">
             <i class="fas fa-bell"></i>
           </a>
-          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
-            <li><a class="dropdown-item" href="#">Some news</a></li>
-            <li><a class="dropdown-item" href="#">Another news</a></li>
-            <li>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </li>
-          </ul>
         </li>
         <li class="nav-item me-3 me-lg-0">
           <a class="nav-link" href="/addCustomer">
@@ -59,6 +45,14 @@
             <i class="fas fa-envelope d-inline-block d-lg-none"></i>
           </a>
         </li>
+
+        <li class="nav-item me-3 me-lg-0">
+          <a class="nav-link" href="/addProduct">
+            <span class="d-none d-lg-inline-block">Add Product</span>
+            <i class="fas fa-envelope d-inline-block d-lg-none"></i>
+          </a>
+        </li>
+
         <li class="nav-item me-3 me-lg-0">
           <a class="nav-link" href="/logout">
             <span class="d-none d-lg-inline-block">Logout</span>
